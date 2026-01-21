@@ -15,10 +15,7 @@ const Login = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !password) {
-      setError("Este campo es obligatorio");
-      return;
-    }
+
     // Demo login - just navigate to dashboard
     navigate("/dashboard");
   };
